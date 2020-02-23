@@ -14,9 +14,6 @@ class Luhn
         return false unless card_number =~ /^[0-9]*$/
         return false unless card_number.length > 1
         
-        
-
-        
         digits = card_number.chars.map { |x| x.to_i}
         i = digits.length - 2
         while i >=0 do
